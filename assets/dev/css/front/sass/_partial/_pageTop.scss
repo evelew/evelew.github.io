@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import "../_structural/alnsStruCommonFunction";
+@import "globalVariables";
+
+.PageTop {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 130px 0 87px 0;
+	position: relative;
+	overflow: hidden;
+
+	@include media-query(md) {
+		height: 100vh;
+		padding: 0;
+	}
+}
+
+.PageTop-background {
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+	position: absolute;
+	left: 0;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+
+	@include media-query(md) {
+		height: 100%;
+	}
+}
+
+.PageTop-content {
+	position: relative;
+	z-index: 5;
+}
+
+.PageTop-ContentTitle,
+.PageTop-ContentSubTitle {
+	color: white;
+	font-family: robotomono-medium, $fontOptions;
+	font-size: 30px;
+	text-align: center;
+
+	@include media-query(md) {
+		font-size: 65px;
+	}
+}
+
+.PageTop-ContentSubTitle {
+		font-size: 22px;
+		margin: 15px 0 0 0;
+		
+		@include media-query(md) {
+			font-size: 26px;
+			margin: 20px 0 0 0;
+		}
+	}
