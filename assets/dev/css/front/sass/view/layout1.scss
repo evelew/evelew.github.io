@@ -2,7 +2,6 @@
 @import "../_structural/alnsStruCommonFunction";
 @import "../_partial/globalVariables";
 @import "../_partial/pageTop";
-
 @import "../_partial/portfolio";
 
 @keyframes pulse {
@@ -14,7 +13,7 @@
 .NewDesign {
 	background: white;
 	overflow: hidden;
-	
+
 	p {
 		color: $mineShaft;
 		font-family: robotomono-regular, $fontOptions;
@@ -26,11 +25,11 @@
 			font-size: 16px;
 			margin: 0 0 30px 0;
 		}
-		
+
 		.heart {
 			animation: pulse 1s ease infinite;
 			width: 15px;
-			
+
 			path{
 				fill: red;
 			}
