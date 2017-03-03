@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import "../_structural/alnsStruCommonFunction";
 @import "globalVariables";
-
 .PageTop {
 	align-items: center;
 	display: flex;
@@ -10,7 +9,6 @@
 	padding: 130px 0 87px 0;
 	position: relative;
 	overflow: hidden;
-
 	@include media-query(md) {
 		height: 100vh;
 		padding: 0;
@@ -18,76 +16,61 @@
 }
 
 .PageTop-background {
-	background-position: center center;
-	background-size: cover;
-	height: 40rem;
+	background: linear-gradient(to right, #fc00ff , #00dbde);
+	height: 100%;
 	position: absolute;
 	left: 0;
 	overflow: hidden;
 	top: 0;
 	width: 100%;
-
-	@include media-query(sm){
-		height: 360px;
-	}
-
-	@include media-query(md) {
-		height: 100%;
-	}
 }
 
 .PageTop-content {
+	background: rgba(0,0,0,0.8);
+	padding: 30px 50px;
 	position: relative;
+	width: 500px;
 	z-index: 5;
 }
 
-.PageTop-ContentTitle,
 .PageTop-ContentSubTitle {
 	color: white;
-	font-family: robotomono-medium, $fontOptions;
-	font-size: 30px;
+	font-family: robotomono-light, $fontOptions;
+	font-size: 18px;
+	line-height: 22px;
+	margin: 15px 0 40px 0;
 	text-align: center;
-
-	@include media-query(md) {
-		font-size: 65px;
+	a {
+		color: $rhino;
+		font-family: robotomono-medium, $fontOptions;
 	}
 }
 
-.PageTop-ContentSubTitle {
-		font-size: 22px;
-		margin: 15px 0 0 0;
-
-		@include media-query(md) {
-			font-size: 26px;
-			margin: 20px 0 0 0;
+.PageTop-socialMedias {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto 0 auto;
+	width: 180px;
+	a {
+		border-radius: 3px;
+		display: block;
+		height: 35px;
+		width: 35px;
+		&.email {
+			background: url(../../images/icon/email.svg) center center no-repeat $rhino;
+			background-size: 23px;
+		}
+		&.facebook {
+			background: url(../../images/icon/facebook.svg) center center no-repeat $rhino;
+			background-size: 23px;
+		}
+		&.github {
+			background: url(../../images/icon/github.svg) center center no-repeat $rhino;
+			background-size: 25px;
+		}
+		&.codepen {
+			background: url(../../images/icon/codepen.svg) center center no-repeat $rhino;
+			background-size: 25px;
 		}
 	}
-
-	.PageTop-socialMedias {
-		display: flex;
-		justify-content: space-between;
-		margin: 20px auto 0 auto;
-		width: 120px;
-
-		a {
-			border-radius: 3px;
-			display: block;
-			height: 35px;
-			width: 35px;
-
-			&.facebook {
-				background: url(../../images/icon/facebook.svg) center center no-repeat $rhino;
-				background-size: 23px;
-			}
-
-			&.github {
-				background: url(../../images/icon/github.svg) center center no-repeat $rhino;
-				background-size: 25px;
-			}
-
-			&.codepen {
-				background: url(../../images/icon/codepen.svg) center center no-repeat $rhino;
-				background-size: 25px;
-			}
-		}
-	}
+}

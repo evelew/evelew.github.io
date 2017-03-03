@@ -75,7 +75,6 @@ gulp.task('watch', function () {
 	gulp.watch('assets/dev/vendor/**/*', ['build-vendor-js']);
 });
 
-// create a default task and just log a message
 gulp.task('default', function () {
 	runSequence(
 			'move-css-images',
