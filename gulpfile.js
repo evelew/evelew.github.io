@@ -10,8 +10,8 @@ var gulp = require('gulp'),
 
 		
 gulp.task('move-images', function () {
-	return gulp.src('assets/dev/images/front/**/*')
-			.pipe(gulp.dest('assets/dist/images/front/'));
+	return gulp.src('assets/dev/images/**/*')
+			.pipe(gulp.dest('assets/dist/images/'));
 });
 
 gulp.task('build-css', function () {

@@ -1,4 +1,90 @@
 @charset "utf-8";
-@import "../_structural/alnsStruCommonFunction";
+@import "../_structural/commonFunctions";
 @import "../_partial/globalVariables";
-@import "../_partial/pageTop";
+
+.PageTop {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.PageTop-background {
+	background: linear-gradient(to right, $electricViolet , $robinsEggBlue);
+	height: 100%;
+	position: absolute;
+	left: 0;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+}
+
+.PageTop-image {
+	border-radius: 50%;
+	height: 250px;
+	margin: 0 auto 50px auto;
+	overflow: hidden;
+	width: 250px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.PageTop-content {
+	background: rgba(0,0,0,0.8);
+	max-width: 700px;
+	padding: 30px 50px;
+	position: relative;
+	width: 100%;
+	z-index: 5;
+}
+
+.PageTop-ContentSubTitle {
+	color: white;
+	font-family: robotomono-light, $fontOptions;
+	font-size: 18px;
+	line-height: 22px;
+	margin: 15px 0 40px 0;
+	text-align: center;
+	a {
+		color: $electricViolet;
+	}
+}
+
+.PageTop-socialMedias {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto 0 auto;
+	width: 180px;
+
+	a {
+		border-radius: 3px;
+		display: block;
+		height: 35px;
+		width: 35px;
+
+		&.email {
+			background: url(../../images/icon/email.svg) center center no-repeat $rhino;
+			background-size: 23px;
+		}
+
+		&.facebook {
+			background: url(../../images/icon/facebook.svg) center center no-repeat $rhino;
+			background-size: 23px;
+		}
+		
+		&.github {
+			background: url(../../images/icon/github.svg) center center no-repeat $rhino;
+			background-size: 25px;
+		}
+
+		&.codepen {
+			background: url(../../images/icon/codepen.svg) center center no-repeat $rhino;
+			background-size: 25px;
+		}
+	}
+}
